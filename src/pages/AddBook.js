@@ -4,39 +4,25 @@ import Add from "../firestore/Add";
 import React from "react";
 import { NavBtnLink } from "../navbar/NavbarElements";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import "../styles/addBook.css";
 
 const AddBook = (props) => {
   //   const [book, setBook] = useState({});
 
   return (
-    <div
-      style={{
-        justifyContent: "Center",
-        alignItems: "Right",
-        paddingLeft: 40,
-        paddingTop: 10,
-      }}
-    >
+    <div className="mainDiv">
       <Button
         variant="contained"
         onClick={() => {
           firebaseAuth.signOut();
           props.history.push("/");
         }}
-        style={{
-          position: "absolute",
-          top: 20,
-          fontSize: 18,
-          backgroundColor: "#000",
-        }}
+        className="signoutButton"
       >
         Sign out
       </Button>
-      <NavBtnLink
-        to="/"
-        style={{ position: "absolute", top: 100, left: 16, marginBottom: 100 }}
-      >
-        <ArrowBackIosIcon style={{ fontSize: 13 }} />
+      <NavBtnLink to="/" id="homeButton">
+        <ArrowBackIosIcon id="arrowIcon" />
         Go Back
       </NavBtnLink>
       <Add />

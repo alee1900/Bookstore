@@ -9,14 +9,7 @@ const Home = (props) => {
   const [books, setBooks] = GetData();
 
   return (
-    <div
-      style={{
-        justifyContent: "Center",
-        alignItems: "Right",
-        paddingLeft: 40,
-        paddingTop: 10,
-      }}
-    >
+    <div className="mainDiv">
       <h1>Available Books</h1>
       <Button
         variant="contained"
@@ -24,12 +17,7 @@ const Home = (props) => {
           firebaseAuth.signOut();
           props.history.push("/");
         }}
-        style={{
-          position: "absolute",
-          top: 20,
-          fontSize: 18,
-          backgroundColor: "#000",
-        }}
+        className="signoutButton"
       >
         Sign out
       </Button>

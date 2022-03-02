@@ -1,0 +1,10 @@
+#homeButton {
+  position: absolute;
+  top: 100px;
+  left: 16px;
+  margin-bottom: 100px;
+}
+
+#arrowIcon {
+  font-size: 13px;
+}

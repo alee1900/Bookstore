@@ -1,0 +1,15 @@
+#update Button {
+  margin-bottom: 20px;
+}
+
+#alert-dialog-title {
+  text-align: center;
+}
+
+.dialogInputField {
+  margin-right: auto !important;
+  margin-left: auto !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  width: 100% !important;
+}

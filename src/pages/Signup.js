@@ -4,6 +4,7 @@ import { firebaseAuth } from "../firebase";
 import { AuthContext } from "../Auth";
 import { Redirect } from "react-router";
 import { Button } from "@mui/material";
+import "../styles/login.css";
 
 const Signup = ({ history }) => {
   const handleSignUp = useCallback(
@@ -31,11 +32,8 @@ const Signup = ({ history }) => {
 
   return (
     <div
+      className="mainDiv"
       style={{
-        justifyContent: "Center",
-        alignItems: "Right",
-        paddingLeft: 40,
-        paddingTop: 10,
         textAlign: "center",
       }}
     >
@@ -46,14 +44,7 @@ const Signup = ({ history }) => {
             name="email"
             type="email"
             placeholder="Email"
-            style={{
-              marginRight: 15,
-              fontSize: 20,
-              background: "transparent",
-              padding: 10,
-              borderRadius: 5,
-              margin: 10,
-            }}
+            className="loginInput"
           />
         </label>
         <label>
@@ -61,26 +52,10 @@ const Signup = ({ history }) => {
             name="password"
             type="password"
             placeholder="Password"
-            style={{
-              marginRight: 15,
-              fontSize: 20,
-              background: "transparent",
-              padding: 10,
-              borderRadius: 5,
-              margin: 10,
-            }}
+            className="loginInput"
           />
         </label>
-        <Button
-          variant="outlined"
-          style={{
-            marginLeft: 20,
-            marginTop: 10,
-            marginBottom: 10,
-            fontSize: 18,
-          }}
-          type="submit"
-        >
+        <Button variant="outlined" type="submit" className="loginButton">
           Sign Up
         </Button>
       </form>

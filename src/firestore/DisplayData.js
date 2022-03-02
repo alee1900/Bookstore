@@ -1,6 +1,8 @@
 import React from "react";
-import "./bookStyles.css";
-import BookDetails from "./BookDetails";
+import "../styles/displayData.css";
+import BookDetails from "../components/BookDetails";
+import Delete from "./Delete";
+import Update from "./Update";
 
 const DisplayData = ({ books }) => {
   return (
@@ -17,6 +19,8 @@ const DisplayData = ({ books }) => {
             <p id="bookAuthor">{books.book.author}</p>
           </div>
           <BookDetails books={books} />
+          <Update doc={books.id} />
+          <Delete doc={books.id} />
         </div>
       ))}
     </div>

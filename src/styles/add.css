@@ -1,0 +1,26 @@
+#add {
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+}
+
+#add h1 {
+  margin: 60px;
+}
+
+.inputField {
+  margin-right: auto !important;
+  margin-left: auto !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  width: 50% !important;
+}
+
+#addButton {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  width: 30%;
+}

@@ -1,0 +1,13 @@
+Button {
+  margin-bottom: 20px !important;
+}
+
+#detailsImg {
+  float: left;
+  margin-right: 15px;
+  margin-top: 20px;
+}
+
+#detailsDescription {
+  text-align: justify;
+}
